@@ -9,6 +9,9 @@ async function main() {
 
   const server = express()
 
+  server.use(setting)
+  server.use(logging)
+  
   server.listen(PORT, async () => {
     log.info(`Start server - 0.0.0.0:${PORT}`)
   })
