@@ -13,4 +13,4 @@ export const ResponseCode = {
   confilct: 409,
 
   internalError: 500,
-}
+};

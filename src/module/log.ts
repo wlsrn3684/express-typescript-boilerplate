@@ -1,5 +1,5 @@
-import winston from 'winston'
-import { getTime } from './datetime'
+import winston from 'winston';
+import { getTime } from './datetime';
 
 export default winston.createLogger({
   transports: [
@@ -9,9 +9,9 @@ export default winston.createLogger({
         winston.format.colorize(),
         winston.format.simple(),
         winston.format.printf((obj) => {
-          return `[${getTime()}] \t [${obj.level}] ${obj.message}`
+          return `[${getTime()}] \t [${obj.level}] ${obj.message}`;
         })
       ),
     }),
   ],
-})
+});
