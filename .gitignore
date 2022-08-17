@@ -4,7 +4,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # dotenv environment variables file
-.env
+.env.server
+.env.db
 
 # generate output
 /dist

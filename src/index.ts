@@ -4,7 +4,7 @@ import logging from './lib/logging';
 import envConfig from './config/env';
 import log from './module/log';
 
-async function main() {
+async function bootstrap() {
   const PORT = envConfig.PORT ?? 4000;
 
   const server = express();
@@ -17,7 +17,7 @@ async function main() {
   });
 }
 
-main();
+bootstrap();
 
 process.on('SIGINT', () => {
   console.log();

@@ -1,17 +1,24 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "ES5",
-      "resolveJsonModule": true,
-      "moduleResolution": "node",
-      "outDir": "./dist",
-      "esModuleInterop": true,
-      "sourceMap": true,
-      "typeRoots": ["./node_modules/@types", "./src/define"],
-      "allowJs": true,
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules"]
-  }
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/define"
+    ],
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

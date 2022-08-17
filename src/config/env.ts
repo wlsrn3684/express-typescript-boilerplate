@@ -7,6 +7,6 @@ interface TEnvConfig {
   MODE?: 'server' | 'full';
 }
 
-const envConfig = process.env as TEnvConfig;
+const envConfig = process.env.server as TEnvConfig;
 
 export default envConfig;
